@@ -1,6 +1,7 @@
 package animals;
 
 public abstract class Animal {
+    public final static int LEGS = 4;
     private String name;
     private int age;
 

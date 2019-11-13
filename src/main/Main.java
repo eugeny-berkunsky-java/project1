@@ -7,7 +7,7 @@ import animals.Dog;
 public class Main {
 
     public static void main(String[] args) {
-        Animal animal = new Dog("Tuzik", 3);
+        Animal animal = Dog.homeDog("Tuzik", 3);
         System.out.println(animal.getName());
         animal.voice();
         animal = new Cat("Murka",1);
@@ -19,6 +19,16 @@ public class Main {
                 System.out.println("qwe");
             }
         };
+
+        Dog d = null;
+        System.out.println(d.LEGS);
+
+        System.out.println(((Dog) null).LEGS);
     }
 }
+
+
+
+
+
 
